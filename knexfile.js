@@ -8,11 +8,11 @@ module.exports = {
     connection: {
       filename: './guidrDB.db3'
     },
-    pool: {
-      afterCreate: (conn, done) => {
-        conn.run('PRAGMA foreign_keys = ON', done);
-      },
-  },
+    // pool: {
+    //   afterCreate: (conn, done) => {
+    //     conn.run('PRAGMA foreign_keys = ON', done);
+    //   },
+  // },
   migrations: {
     directory: './data/migrations',
     tableName: 'knex_migrations',
